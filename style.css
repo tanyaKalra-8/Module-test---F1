@@ -1,0 +1,241 @@
+body {
+    background-color: #333;
+  }
+  p{
+    font-size: 16px;
+  }
+  
+  header {
+    border: 1px solid #e0d6c2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-radius: 28px;
+    height: 60px;
+    color: #e0d6c2;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nav-left {
+    display: flex;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 2px;
+    padding: 10px;
+    border-radius: 32px;
+    border: 1px solid #fff;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    font-weight: 500;
+  }
+
+  #events{
+    width: 117px;
+  }
+  
+  .nav-item.active {
+    background-color: rgba(155, 134, 79, 0.2);
+    border: none;
+    width: 370px;
+    font-weight: 800;
+  }
+  
+  .items:hover {
+    background-color: #e0d6c2;
+    color: #333;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.0);
+    column-gap: 10px;
+    margin-top: 15px;
+  }
+  .left-main{
+    background-color: #e0d6c2;
+    border: 0px solid #DFD6C5;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .cong{
+    border: 1px solid #342415;
+    border-radius: 30px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.right-main{
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.bottom-b{
+    display: flex;
+    column-gap: 10px;
+}
+.left-card{
+    background-color: #916E58;
+    border-radius: 30px;
+    padding: 10px;
+}
+.right-card{
+    background-color: #B1A48E;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.top-b{
+    background-color: #8E886D;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.inner-containner{
+    display: flex;
+    column-gap: 45px;
+    padding-bottom: 10px;
+}
+.img1{
+    width: 500px;
+}
+.img2{
+    width: 475px;
+}
+.img-flex{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-weight: bolder;
+    color: #333333;
+    font-size: 25px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 35px 20px;
+    border-top: 1px solid #333333;
+    padding-top: 15px;
+}
+.div-items{
+    overflow: hidden;
+    border-radius: 30px 30px;
+    transform: translateZ(0);
+}
+#border{
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translateZ(0);
+}
+
+/* -------------------------------------HOVER FEATURE ------------------------------------- */
+.left-main:hover img{
+    transform: scale(1.2);
+}
+.top-b:hover img{
+    transform: scale(1.2);
+}
+.left-card:hover img{
+    transform: scale(1.2);
+}
+.right-card:hover img{
+    transform: scale(1.2);
+}
+.left-card:hover #underline{
+    text-decoration: underline;
+}
+
+/* ----------------------------------MEDIA QUERY--------------------------------------------- */
+
+/* ---------------------------------------840------------------------------------------------ */
+
+@media (max-width: 840px) {
+    .container {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .nav-item.active{
+        width: 630px;
+    }
+
+    .img1{
+        width: 790px;
+        height: 300px;
+    }
+    
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .nav-left {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-right {
+      display: none;
+    }
+    
+    .nav-item:not(.active) {
+      display: none;
+    }
+    
+    #menu {
+      display: block;
+    }
+    
+    #events {
+      display: none;
+    }
+  }
+
+  /* -------------------------------------540----------------------------------------------- */
+
+  @media screen and (max-width: 540px) {
+    .container {
+      flex-direction: column;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-bar .company,
+    .nav-bar .menu {
+      display: block;
+      width: 100%;
+    }
+    .inner-containner{
+        flex-direction: column;
+    }
+    
+    .bottom-b {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+  
