@@ -229,6 +229,9 @@ h2{
       display: block;
       width: 100%;
     }
+    .right-card{
+      width: auto;
+    }
     .inner-containner{
         flex-direction: column;
     }
